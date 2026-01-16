@@ -10,9 +10,9 @@
 # zahl1 = int(input("  "))
 # operation = input("   ")
 # zahl2 = int(input("  "))
-#
-#
-#
+
+
+
 # if operation == "+":
 #     result = (float(zahl1)) + (float(zahl2))
 #     print(f"{zahl1} {operation} {zahl2} = {result}")
@@ -47,7 +47,7 @@
 #     U = float(input("Bitte geben Sie den Wert von U ein"))
 #     I = float(input("Bitte geben Sie den Wert von I ein"))
 #     R = U / I
-#     print(f"Der Wert von R beträgt {R}")
+#     print(f"Der Wert von R beträgt {R}.")
 #
 # elif formelberechnung == "U":
 #     R = float(input("Bitte geben Sie den Wert von R ein"))
@@ -61,7 +61,8 @@
 #     I = U / R
 #     print(f"Der Wert von I beträgt {I}")
 #
-# else print("gehört nicht zur Berechnung")
+# else:
+#     print("gehört nicht zur Berechnung")
 
 # Ein Hardware-Großhändler führt ein Rabattsystem für Stammkunden ein: Liegt der Bestellwert zwischen 0 und
 # 100 €, erhält der Kunde einen Rabatt von 10 %. Liegt der Bestellwert höher, aber insgesamt nicht über 500 €,
@@ -100,33 +101,33 @@
 # Das Programm soll vom Benutzer das Gewicht [in kg] die Größe [in cm] und das Geschlecht [m/w] abfragen. Am
 # Ende des Programms soll die BMI-Klassifikation der Person ausgegeben werden.
 #
-# try:
-#     klassifikation = input("geben Sie bitte Ihr Geschlecht in M oder W an").upper()
-#
-#     if klassifikation != "W" and klassifikation != "M":
-#         raise ValueError ("Ungültige Eingabe")
-#
-#     körpergewicht = float(input("Bitte geben Sie Ihr Körpergewicht in Kg an: "))
-#     körpergröße = float(input("Bitte geben Sie Ihre Körpergröße in Meter an: "))
-#     bmi = körpergewicht / (körpergröße **2)
-#
-#
-#
-#     if (klassifikation == "M" and bmi < 20) or (klassifikation == "W" and bmi < 19):
-#         print(f"Untergewicht {bmi}")
-#     elif (klassifikation == "M" and 20<= bmi <=25) or (klassifikation == "W" and 19<= bmi <=24):
-#         print(f"Normalgewicht {bmi}")
-#     elif (klassifikation == "M" and 25<= bmi <=30) or (klassifikation == "W" and 24<= bmi <=30):
-#         print(f"Übergewicht {bmi}")
-#     elif (klassifikation == "M" and 30<= bmi <=40) or (klassifikation == "W" and 30<= bmi <=40):
-#         print(f"Adipositas {bmi}")
-#     elif (klassifikation == "M" and 40<=  bmi) or (klassifikation == "W" and  40<= bmi):
-#         print(f"massive Adipositas {bmi}")
-#
-#     else:
-#         print("Ungültige Eingabe")
-# except:
-#     print("Geschlecht Falsch")
+try:
+    klassifikation = input("geben Sie bitte Ihr Geschlecht in M oder W an").upper()
+
+    if klassifikation != "W" and klassifikation != "M":
+        raise ValueError ("Ungültige Eingabe")
+
+
+    körpergewicht = float(input("Bitte geben Sie Ihr Körpergewicht in Kg an: "))
+    körpergröße = float(input("Bitte geben Sie Ihre Körpergröße in Meter an: "))
+    bmi = körpergewicht / (körpergröße **2)
+
+
+    if (klassifikation == "M" and bmi < 20) or (klassifikation == "W" and bmi < 19):
+        print(f"Untergewicht {bmi}")
+    elif (klassifikation == "M" and 20<= bmi <=25) or (klassifikation == "W" and 19<= bmi <=24):
+        print(f"Normalgewicht {bmi}")
+    elif (klassifikation == "M" and 25<= bmi <=30) or (klassifikation == "W" and 24<= bmi <=30):
+        print(f"Übergewicht {bmi}")
+    elif (klassifikation == "M" and 30<= bmi <=40) or (klassifikation == "W" and 30<= bmi <=40):
+        print(f"Adipositas {bmi}")
+    elif (klassifikation == "M" and 40<= bmi) or (klassifikation == "W" and  40<= bmi):
+        print(f"massive Adipositas {bmi}")
+
+    else:
+        print("Ungültige Eingabe")
+except:
+    print("Geschlecht Falsch")
 
 # Schaltjahres-Berechnung
 # Eingabe eines Jahres -> Ausgabe Schaltjahr, kein Schaltjahr
@@ -139,12 +140,12 @@
 # Seitdem gilt der Gregorianische Kalender mit den folgenden Regeln zur Schaltjahresberechnung:
 #
 #
-jahr = input("Bitte geben Sie das Jahr ein: ")
-if jahr % 400 == 0 or jahr % 4 == 0 and jahr % 100 != 0:
-    print(f"{jahr} ist ein Schaltjahr")
-
-else:
-    print(f"{jahr} ist kein Schaltjahr")
+# jahr = int(input("Bitte geben Sie das Jahr ein: "))
+# if jahr % 400 == 0 or jahr % 4 == 0 and jahr % 100 != 0:
+#     print(f"{jahr} ist ein Schaltjahr")
+#
+# else:
+#     print(f"{jahr} ist kein Schaltjahr")
 #
 # Bedingung 1:
 # Ist eine Jahreszahl ganzzahlig durch 4 teilbar, dann ist das Jahr ein Schaltjahr. Testwerte: 1720, 1972
@@ -176,3 +177,20 @@ else:
 # abgezogen wird.
 # Das Programm sollte den Benutzer nach dem monatlichen Energieverbrauch in kWh fragen und dann die Gesamtkosten
 # unter Berücksichtigung der oben genannten Bedingungen berechnen.
+
+# verbrauch = float(input("Bitte geben Sie ihren Verbrauch in kWh"))
+#
+# if verbrauch <= 100:
+#     print(f"Ihre Energieverbrauchskosten betragen:{verbrauch * 0.3 - 10} €")
+#
+# elif verbrauch <= 150:
+#     print(f"Ihre Energieverbrauchskosten betragen: {(verbrauch - 100) * 0.25 + 100 * 0.3 -10} €")
+#
+# elif verbrauch <= 300:
+#     print(f"Ihre Energieverbrauchskosten betragen: {(verbrauch - 200) * 0.25 + 200 * 0.25} €")
+#
+# elif verbrauch > 300:
+#     print(f"Ihre Energieverbrauchskosten betragen: {(verbrauch - 300) * 0.20 + 200 * 0.25 + 100 * 0.3} €")
+#
+# else:
+#     print("Falsche Eingabe")

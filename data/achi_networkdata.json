@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Thorsten",
+    "subnetz": "192.168.0.0",
+    "agent_ip": "172.16.99.100",
+    "raum": "r_1"
+  },
+  {
+    "name": "Sherwin",
+    "subnetz": "192.168.10.0",
+    "agent_ip": "172.16.99.101",
+    "raum": "r_2"
+  },
+  {
+    "name": "Felix",
+    "subnetz": "192.168.20.0",
+    "agent_ip": "172.16.99.102",
+    "raum": "r_3"
+  },
+  {
+    "name": "Wlad",
+    "subnetz": "192.168.30.0",
+    "agent_ip": "172.16.99.103",
+    "raum": "r_4"
+  },
+  {
+    "name": "Michael",
+    "subnetz": "192.168.40.0",
+    "agent_ip": "172.16.99.104",
+    "raum": "r_5"
+  },
+  {
+    "name": "Alexander",
+    "subnetz": "192.168.50.0",
+    "agent_ip": "172.16.99.105",
+    "raum": "r_6"
+  },
+  {
+    "name": "Hassan",
+    "subnetz": "192.168.60.0",
+    "agent_ip": "172.16.99.106",
+    "raum": "r_7"
+  },
+  {
+    "name": "Achmed",
+    "subnetz": "192.168.70.0",
+    "agent_ip": "172.16.99.107",
+    "raum": "r_8"
+  },
+  {
+    "name": "Reza",
+    "subnetz": "192.168.80.0",
+    "agent_ip": "172.16.99.108",
+    "raum": "r_9"
+  },
+  {
+    "name": "Jiwan",
+    "subnetz": "192.168.90.0",
+    "agent_ip": "172.16.99.109",
+    "raum": "r_10"
+  },
+  {
+    "name": "Yanwolf",
+    "subnetz": "192.168.100.0",
+    "agent_ip": "172.16.99.110",
+    "raum": "r_11"
+  },
+  {
+    "name": "Jason",
+    "subnetz": "192.168.110.0",
+    "agent_ip": "172.16.99.111",
+    "raum": "r_12"
+  },
+  {
+    "name": "Edwin",
+    "subnetz": "192.168.120.0",
+    "agent_ip": "172.16.99.112",
+    "raum": "r_13"
+  }
+]
