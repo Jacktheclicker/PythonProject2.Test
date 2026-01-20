@@ -28,7 +28,7 @@ print('#######################')
 # # **
 # # *
 print('Aufgabe 3')
-# for schleife in range(5,-1, -1):
+# for schleife in range(5, 0, 1):
 #     print('*' * schleife)
 print('#######################')
 #
@@ -74,7 +74,7 @@ print('#######################')
 print('Aufgabe 6')
 # for zahl in range(5, 0, -1):
 #     for m in range(1,zahl +1):
-#         print(m, end='')
+#         print(str(m) end='')
 #     print()
 
 
