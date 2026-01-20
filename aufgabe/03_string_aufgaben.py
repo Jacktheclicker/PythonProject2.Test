@@ -1,9 +1,12 @@
 # Erstelle einen Variable my_var und weise ihr den wert "Hallo Welt" zu
+my_var = "Hallo Welt"
 
 # Erstelle eine Variable erster und weise ihr den Ersten Buchstaben des Strings my_var zu
+erster = my_var[0]
 
 # Erstelle eine Variable letzter und weise ihr den letzten Buchstaben des Strings my_var zu
-
+letzter = my_var[-1]
+print(erster, letzter)
 # Schneide aus dem Stringh in my_var das Wort Hallo aus und weise es der Variable hallo zu.
 
 # Schneide aus dem String in my_var das Wort Welt aus und weise es der Variable welt zu.
