@@ -3,18 +3,53 @@
 # Der Bubblesort-Algorithmus funktioniert, indem er benachbarte Elemente vergleicht
 # und sie vertauscht, wenn sie in der falschen Reihenfolge sind.
 # Dieser Prozess wird so lange wiederholt, bis die gesamte Liste sortiert ist.
+from cmath import polar
+from operator import index
 
 # liste = [27, 29, 7, 76, 56]
-#
-#
-# for x in range(5):
-# 	for y in range(4):
+
+# for x in liste[0:]:
+# 	for y in liste[0:]:
+# 		if liste[y][29] > liste[y + 1]:
+# 			liste[y][29], liste[y + 1] = liste[y + 1], liste[y][29]
+# print(liste)
+
+# liste = [40, 8, 63, 60, 12, 4, 13, 82, 87, 87, 87, 84, 85, 39, 57, 55, 72, 6, 46, 18, 5, 97, 78, 64, 94, 64, 62, 22, 11, 89, 92, 53, 22, 51, 44, 49, 6, 87, 57, 20, 39, 67, 87, 49, 71, 79, 80, 94, 19, 57, 13, 71, 51, 99, 68, 31, 80, 63, 41, 17, 25, 7, 88, 86, 29, 58, 99, 63, 28, 59, 2, 34, 15, 73, 36, 90, 9, 75, 61, 40, 1, 23, 71, 94, 75, 46, 59, 72, 73, 63, 93, 90, 68, 7, 29, 92, 44, 74, 84, 80]
+liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15 ,16, 17, 18, 19, 20, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 72, 80]
+print(len(liste))
+x = int(input(f'Welche Zahl suchen Sie? :   '))
+position0 = liste[0]
+positionlast = len(liste) -1
+
+if x not in liste:
+	print('Zahl existiert nicht in der Liste')
+else:
+	while position0 <= positionlast:
+
+		mitte = (position0 + positionlast) // 2
+
+		if liste[mitte] == x:
+			break
+		elif liste[mitte] < x:
+			position0 = mitte + 1
+		elif liste[mitte] > x:
+			positionlast = mitte -1
+
+
+	print(f'Deine Zahl {x} liegt auf position {mitte}')
+
+
+# for x in len(liste)-1:
+# 	for y in len(liste) - x - 1:
 # 		if liste[y] > liste[y + 1]:
 # 			liste[y], liste[y + 1] = liste[y + 1], liste[y]
 # print(liste)
 
-
 # liste = [40, 8, 63, 60, 12, 4, 13, 82, 87, 87, 87, 84, 85, 39, 57, 55, 72, 6, 46, 18, 5, 97, 78, 64, 94, 64, 62, 22, 11, 89, 92, 53, 22, 51, 44, 49, 6, 87, 57, 20, 39, 67, 87, 49, 71, 79, 80, 94, 19, 57, 13, 71, 51, 99, 68, 31, 80, 63, 41, 17, 25, 7, 88, 86, 29, 58, 99, 63, 28, 59, 2, 34, 15, 73, 36, 90, 9, 75, 61, 40, 1, 23, 71, 94, 75, 46, 59, 72, 73, 63, 93, 90, 68, 7, 29, 92, 44, 74, 84, 80
+
+
+
+
 
 
 list_dic = [{'name': 'Melanie Reilly', 'email': 'jacksonlopez@example.com', 'anzahl': 40},
@@ -118,10 +153,10 @@ list_dic = [{'name': 'Melanie Reilly', 'email': 'jacksonlopez@example.com', 'anz
 			{'name': 'Logan Stevens', 'email': 'ryanbradley@example.net', 'anzahl': 84},
 			{'name': 'Matthew Barry', 'email': 'annerowe@example.com', 'anzahl': 80}]
 
-n = len(list_dic)
-
-for x in range(n - 1):
-	for y in range(n - x -1):
-		if list_dic[y]['anzahl'] < list_dic[y + 1]['anzahl']:
-			list_dic[y], list_dic[y + 1] = list_dic[y + 1], list_dic[y]
-print(*list_dic, sep='\n')
+# n = len(list_dic)
+#
+# for x in range(n - 1):
+# 	for y in range(n - x -1):
+# 		if list_dic[y]['anzahl'] > list_dic[y + 1]['anzahl']:
+# 			list_dic[y], list_dic[y + 1] = list_dic[y + 1], list_dic[y]
+# print(*list_dic, sep='\n')
