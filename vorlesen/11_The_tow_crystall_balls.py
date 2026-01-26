@@ -8,24 +8,27 @@ from itertools import count
 
 kritisch = random.randint(0, 100)
 haus = list(range(101))
-kugel1 = haus[100]
-kugel2 = haus[0]
-
-
+ball_1 = True
+ball_2 = True
+wurf_aus = len(haus)//2
+if wurf_aus >= kritisch:
+    ball_1 = False
+    print('kugel kaputt')
+kugel1 = len(haus) -1
+kugel2 = 0
+count = 0
+print(haus)
 while kugel2 <= kugel1:
-
-    mitte = len(haus) // 2
-    if kugel1 == kritisch:
-        print(f'Deine erste Kugel wurde zerstört auf etage {kritisch}')
-    elif kugel2 == kritisch:
-        print(f'Deine zweite Kugel wurde zerstört auf etage {kritisch}')
+    count +=1
+    mitte = (kugel1 + kugel2) // 2
 
     if haus[mitte] == kritisch:
+        print(f'Das kritische Stockwerk ist {kritisch}. gefunden bei runde {count}')
         break
     elif haus[mitte] < kritisch:
-        kugel2 = mitte + 1
-    elif haus[mitte] > kritisch:
-        kugel1 = mitte - 1
+        kugel2 = haus[mitte + 1]
+    else:
+        kugel1 = haus[mitte - 1]
 
 else:
-    print(f'Der Kritische Stockwerk {kritisch} wurde zwischen {kugel2} und {kugel1} entdeckt.')
+    print(f'Der Kritische Stockwerk {kritisch} wurde zwischen {kugel2} und {kugel1} entdeckt.{count}')

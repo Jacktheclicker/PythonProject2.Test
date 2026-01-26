@@ -165,15 +165,15 @@ print('#######################')
 # # Somit ist eine Teilbarkeit einfach dann erreicht,
 # # wenn die Modulo-Operation (%, MOD) den Rest 0 liefert.
 # print('Aufgabe 8')
-# for zahl in range(101):
-#         if zahl % 5 == 0 and zahl % 7 == 0:
-#             print('fizzbuzz')
-#         elif zahl % 5 == 0:
-#             print('fizz')
-#         elif zahl % 7 == 0:
-#             print('buzz')
-#         else:
-#             print(zahl)
+for zahl in range(101):
+        if zahl % 5 == 0 and zahl % 7 == 0:
+            print('fizzbuzz')
+        elif zahl % 5 == 0:
+            print('fizz')
+        elif zahl % 7 == 0:
+            print('buzz')
+        else:
+            print(zahl)
 
 print('#######################')
 #

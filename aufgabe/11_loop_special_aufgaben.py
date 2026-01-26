@@ -15,6 +15,8 @@
 # Wiederhole mit den jeweils neuen Näherungswerten x bis die gewünschte Genauigkeit erreicht ist.
 # Die Grundidee für dieses Verfahren basiert auf der Frage, wie ein Rechteck in ein flächengleiches Quadrat
 # umgewandelt werden kann … dafür wird die Seitenlänge des Quadrats benötigt.
+from math import remainder
+from os import remove
 
 # Schreibe den Algorithmus in Pyhton fuer 10 wiederholungen
 
@@ -37,13 +39,41 @@
 # kann sie nur durch eins und sich selbst teilbar sein. Folglich muss es sich um eine Primzahl handeln.
 # Diese wird dementsprechend als Primzahl ausgegeben. Man streicht wieder alle Vielfachen und führt das Verfahren fort,
 # bis man am Ende der Liste angekommen ist. Im Verlauf des Verfahren werden alle Primzahlen ausgegeben.
-w = 1
-x = 100
-count = 10
-while x != 0.1:
-    count -= 1
-    x = (x + w /x ) / 2
+# w = 25
+# x = w/2
+# for i in range(20):
+#     x = (x + w /x ) / 2
+#     print(x)
+keine_Prim = []
+prim = []
+i = 2
 
-    if count == 0:
-        break
-print(x)
+
+w = list(range(2,101))
+for x in w:
+
+    for i in range(0, 100, -2):
+        if x != i:
+            if x % i == 0:
+                keine_Prim.append(i)
+                x += 1
+            else:
+                prim.append(i)
+
+
+
+
+    # print(x, end='')
+# if w[x] % i == 0:
+    #     w[x] = False
+print('Prim', prim)
+print('keine Prim', keine_Prim)
+
+#     i += 1
+#     break
+# print(x)
+
+        # if (x % 3 ==0):
+        # if (x % 2 == 0):
+        # if (x % 2 == 0):
+
