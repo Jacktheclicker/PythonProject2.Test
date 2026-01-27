@@ -1,4 +1,10 @@
 # Schreibe eine Funktion, die überprüft, ob eine Zahl zwischen 10 und 20 liegt
+from operator import truediv
+
+
+def prüfer(zahl:int): -> bool:
+    if zahl < 10 or zahl > 20:
+        return
 
 # Schreibe eine Funktion, die überprüft, ob eine Zahl entweder kleiner als 5 oder größer als 15 ist.
 
