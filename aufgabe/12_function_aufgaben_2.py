@@ -1,16 +1,12 @@
 # Schreibe eine Funktion 'get_durchschnitt', die eine Liste von Zahlen erhaelt und den Durchschnitt
 # dieser Liste returned
-# zahlen = [10, 20, 30, 40, 50]
-
-# def get_durchschnitt(zahlen):
-#     print(sum(zahlen)/len(zahlen))
-# get_durchschnitt(zahlen)
+zahlen = [10, 20, 30, 40, 50]
 
 # Schreibe eine Funktion 'get_durchschnitt_unbekannt', die eine unbestimmte Anzahl von Parametern  von Zahlen erhaelt
 # und den Durchschnitt dieser Parameter returned
-# def get_durchschnitt_unbekannt(zahlen):
-#     print(sum(zahlen)/len(zahlen))
-# get_durchschnitt_unbekannt(zahlen)
+
+
+
 
 
 # Schreibe eine Funktion, die eine Liste von Zahlen nimmt
@@ -18,11 +14,6 @@
 zahlen = [2, 4, 6, 8, 10]  # -> # Sollte [4, 16, 36, 64, 100] ergeben
 # Schreibe eine Funktion, die eine unbestimmte Anzahl von Parametern von Zahlen nimmt
 # und eine Liste mit den Quadraten dieser Zahlen zurückgibt
-
-def quadrate(zahlen):
-    for x in zahlen:
-        x = x**2
-    print(quadrate(zahlen))
 
 
 # Schreibe eine Funktion,
